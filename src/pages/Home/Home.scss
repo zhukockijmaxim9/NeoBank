@@ -1,36 +1,64 @@
 main {
   display: flex;
   flex-direction: column;
-}
-
-#hero {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
   align-self: center;
 
   width: 1300px;
-  margin-top: 130px;
+  margin: 0 auto;
 
-  h1 {
-    font-family: Ubuntu;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 48px;
-    line-height: 50px;
-    letter-spacing: 0%;
+  #hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    width: 100%;
+    margin-top: 130px;
+
+    h1 {
+      font-family: Ubuntu;
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 48px;
+      line-height: 50px;
+      letter-spacing: 0%;
+    }
+    .card-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 250px);
+      grid-template-rows: repeat(2, 150px);
+      gap: 15px;
+
+      img {
+        width: 250px;
+        height: 150px;
+        object-fit: cover;
+      }
+    }
   }
-  .card-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 250px);
-    grid-template-rows: repeat(2, 150px);
-    gap: 15px;
 
-    img {
-      width: 250px;
-      height: 150px;
-      object-fit: cover;
+  #skills {
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 130px;
+
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding-left: 36px;
+        background-image: url('/goal.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 24px 24px;
+        line-height: 24px;
+        margin-bottom: 15px;
+      }
     }
   }
 }

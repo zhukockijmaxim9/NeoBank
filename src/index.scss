@@ -2,9 +2,35 @@
 @font-face {
   font-family: Ubuntu;
   src: url(/src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf);
-  font-weight: bold;
+  font-weight: 700;
+}
+@font-face {
+  font-family: Ubuntu;
+  src: url(/src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Rubik;
+  src: url(/src/assets/fonts/Rubik/Rubik-VariableFont_wght.ttf)
+    format('truetype-variations');
+  font-weight: 100 900;
 }
 
 body {
   background-color: $color-bg;
+}
+h1 {
+  font-family: Ubuntu;
+  font-weight: 700;
+}
+h2 {
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-size: 35px;
+}
+p,
+li {
+  font-family: Rubik;
+  font-weight: normal;
+  font-size: 16;
 }
