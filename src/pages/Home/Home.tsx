@@ -99,6 +99,20 @@ function Home() {
         <p>Withdraw and transfer money online through our application</p>
         <img src="/illustrations/global.png" alt="global" />
       </section>
+
+      <section id="support">
+        <h4>Support</h4>
+        <h3>
+          Subscribe Newsletter & get <br /> Bank News{' '}
+        </h3>
+        <form>
+          <img src="/icons/email.png" />
+          <input placeholder="Your email" />
+          <button className="subscribe-btn">
+            <img src="/icons/tg.png" width={24} height={24} /> Subscribe
+          </button>
+        </form>
+      </section>
     </main>
   );
 }
