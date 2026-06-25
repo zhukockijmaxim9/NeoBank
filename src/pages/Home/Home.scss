@@ -41,7 +41,7 @@ main {
     display: flex;
     flex-direction: row;
 
-    padding-top: 130px;
+    margin-top: 130px;
 
     justify-content: space-between;
     align-items: center;
@@ -52,12 +52,45 @@ main {
 
       li {
         padding-left: 36px;
-        background-image: url('/goal.png');
+        background-image: url('/illustrations/goal.png');
         background-repeat: no-repeat;
         background-position: left center;
         background-size: 24px 24px;
         line-height: 24px;
         margin-bottom: 15px;
+      }
+    }
+  }
+
+  #bank {
+    margin-top: 40px;
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: linear-gradient(360deg, #b2b2b2, rgba(244, 244, 244, 0.9));
+    border-radius: 30px;
+    box-shadow:
+      0 0 4px rgba(0, 0, 0, 0.08),
+      0 2px 4px rgba(187, 187, 187, 0.2);
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    article {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    tr {
+      font-family: Ubuntu;
+      font-weight: 700;
+      font-size: 20px;
+      td {
+        width: 65px;
       }
     }
   }
