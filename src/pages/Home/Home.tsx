@@ -93,6 +93,12 @@ function Home() {
         </article>
         <p className="alternative-white">All courses</p>
       </section>
+
+      <section id="world">
+        <h3>You can use our services anywhere in the world</h3>
+        <p>Withdraw and transfer money online through our application</p>
+        <img src="/illustrations/global.png" alt="global" />
+      </section>
     </main>
   );
 }
