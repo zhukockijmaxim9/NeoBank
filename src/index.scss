@@ -1,4 +1,9 @@
 @use './styles/variables' as *;
+@font-face {
+  font-family: Ubuntu;
+  src: url(/src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf);
+  font-weight: bold;
+}
 
 body {
   background-color: $color-bg;

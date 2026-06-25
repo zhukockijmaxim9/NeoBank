@@ -1,0 +1,42 @@
+header {
+  width: 1300px;
+  height: 64px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+
+  padding: 16px 0;
+
+  p {
+    font-family: Ubuntu;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    // leading-trim: NONE;
+    line-height: 112.00000000000001%;
+    letter-spacing: 2%;
+    vertical-align: middle;
+
+    color: rgba(180, 56, 122, 1);
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+
+    width: fit-content;
+    height: fit-content;
+    gap: 40px;
+
+    align-items: center;
+    justify-content: space-between;
+
+    li {
+      padding: 10px;
+      font-family: Ubuntu;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+import './Header.scss';
+
+function Header() {
+  return (
+    <header>
+      <p>NeoBank</p>
+      <nav>
+        <ul>
+          <li>Credit card</li>
+          <li>Product</li>
+          <li>Account</li>
+          <li>Resourses</li>
+        </ul>
+      </nav>
+      <button>Online Bank</button>
+    </header>
+  );
+}
+
+export default Header;
