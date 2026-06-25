@@ -1,4 +1,5 @@
 import './Header.scss';
+import '../../styles/shared.scss';
 
 function Header() {
   return (
@@ -12,7 +13,7 @@ function Header() {
           <li>Resourses</li>
         </ul>
       </nav>
-      <button>Online Bank</button>
+      <button className="button-primary">Online Bank</button>
     </header>
   );
 }
