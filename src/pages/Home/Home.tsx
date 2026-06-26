@@ -5,11 +5,11 @@ function Home() {
   return (
     <main>
       <section id="hero">
-        <article>
+        <div className="hero-content">
           <h1>Choose the design you like and apply for card right now</h1>
           <button className="button-primary">Choose the card</button>
-        </article>
-        <article className="card-gallery">
+        </div>
+        <div className="card-gallery">
           <img
             src="/cards/cardImage1.png"
             alt="Card design 1"
@@ -34,17 +34,17 @@ function Home() {
             width={250}
             height={150}
           />
-        </article>
+        </div>
       </section>
 
       <section id="skills">
         <img
           src="/illustrations/Illustration1.png"
-          alt="illestration 1"
+          alt="Banking features illustration"
           width={500}
           height={415}
         />
-        <article>
+        <div>
           <h2>We Provide Many Features You Can Use</h2>
           <p>
             You can explore the features that we provide with fun and have their
@@ -56,7 +56,7 @@ function Home() {
             <li>Personal design</li>
             <li>Work anywhere in the world</li>
           </ul>
-        </article>
+        </div>
       </section>
 
       <section id="bank">
@@ -65,7 +65,7 @@ function Home() {
           <p>Update every 15 minutes, MSC 09.08.2022</p>
         </div>
         <p>Currency</p>
-        <article>
+        <div className="bank-content">
           <table>
             <tbody>
               <tr>
@@ -86,15 +86,15 @@ function Home() {
               </tr>
             </tbody>
           </table>
-          <img src="/illustrations/bank.png" height={115} width={120} />
-        </article>
+          <img src="/illustrations/bank.png" alt="" height={115} width={120} />
+        </div>
         <p className="alternative-white">All courses</p>
       </section>
 
       <section id="world">
         <h3>You can use our services anywhere in the world</h3>
         <p>Withdraw and transfer money online through our application</p>
-        <img src="/illustrations/global.png" alt="global" />
+        <img src="/illustrations/global.png" alt="" />
       </section>
 
       <section id="support">
@@ -103,10 +103,10 @@ function Home() {
           Subscribe Newsletter & get <br /> Bank News{' '}
         </h3>
         <form>
-          <img src="/icons/email.png" />
-          <input placeholder="Your email" />
+          <img src="/icons/email.png" alt="" />
+          <input id="newsletter-email" type="email" placeholder="Your email" />
           <button className="subscribe-btn">
-            <img src="/icons/tg.png" width={24} height={24} /> Subscribe
+            <img src="/icons/tg.png" alt="" width={24} height={24} /> Subscribe
           </button>
         </form>
       </section>

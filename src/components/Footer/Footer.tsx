@@ -5,7 +5,7 @@ function Footer() {
     <div className="footer-wrapper">
       <footer>
         <div className="footer-info">
-          <img src="/icons/logo1.png" alt="logo1" width={160} height={50} />
+          <img src="/icons/logo1.png" alt="NeoBank logo" width={160} height={50} />
           <address>
             <a href="tel:+74959842513" className="phone">
               +7 (495) 984 25 13
