@@ -1,12 +1,9 @@
-import Header from '../../components/Header/Header';
 import './Home.scss';
 import '../../styles/shared.scss';
 
 function Home() {
   return (
     <main>
-      <Header />
-
       <section id="hero">
         <article>
           <h1>Choose the design you like and apply for card right now</h1>
