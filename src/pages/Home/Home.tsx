@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Home.scss';
 import '../../styles/shared.scss';
 
@@ -7,7 +8,9 @@ function Home() {
       <section id="hero">
         <div className="hero-content">
           <h1>Choose the design you like and apply for card right now</h1>
-          <button className="button-primary">Choose the card</button>
+          <Link className="button-primary" to="/credit-card">
+            Choose the card
+          </Link>
         </div>
         <div className="card-gallery">
           <img
@@ -88,7 +91,9 @@ function Home() {
           </table>
           <img src="/illustrations/bank.png" alt="" height={115} width={120} />
         </div>
-        <p className="alternative-white">All courses</p>
+        <Link className="alternative-white all-courses-link" to="/courses">
+          All courses
+        </Link>
       </section>
 
       <section id="world">

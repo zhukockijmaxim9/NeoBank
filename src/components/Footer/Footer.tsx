@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Footer.scss';
 
 function Footer() {
@@ -19,34 +20,34 @@ function Footer() {
         <nav className="links" aria-label="Footer navigation">
           <ul>
             <li>
-              <a href="/about">About bank</a>
+              <Link to="/about">About bank</Link>
             </li>
             <li>
-              <a href="/ask">Ask a Question</a>
+              <Link to="/ask">Ask a Question</Link>
             </li>
             <li>
-              <a href="/quality">Quality of service</a>
+              <Link to="/quality">Quality of service</Link>
             </li>
             <li>
-              <a href="/requisites">Requisites</a>
+              <Link to="/requisites">Requisites</Link>
             </li>
             <li>
-              <a href="/press-center">Press center</a>
+              <Link to="/press-center">Press center</Link>
             </li>
             <li>
-              <a href="/career">Bank career</a>
+              <Link to="/career">Bank career</Link>
             </li>
             <li>
-              <a href="/investors">Investors</a>
+              <Link to="/investors">Investors</Link>
             </li>
             <li>
-              <a href="/analytics">Analytics</a>
+              <Link to="/analytics">Analytics</Link>
             </li>
             <li>
-              <a href="/business-processes">Business and processes</a>
+              <Link to="/business-processes">Business and processes</Link>
             </li>
             <li>
-              <a href="/compliance">Compliance and business ethics</a>
+              <Link to="/compliance">Compliance and business ethics</Link>
             </li>
           </ul>
         </nav>
