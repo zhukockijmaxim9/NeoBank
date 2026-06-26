@@ -1,0 +1,22 @@
+// Breakpoints
+$desktop: 1300px;
+$tablet: 920px;
+$mobile: 500px;
+
+@mixin desktop {
+  @media (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}

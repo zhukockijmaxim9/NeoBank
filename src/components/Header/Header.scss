@@ -1,3 +1,5 @@
+@use '../../styles/breakpoints.scss' as *;
+
 .header-wrapper {
   width: 100%;
   display: flex;
@@ -5,7 +7,7 @@
 }
 
 header {
-  width: 1300px;
+  min-width: 1300px;
   height: 64px;
 
   display: flex;
@@ -49,6 +51,42 @@ header {
         color: inherit;
         text-decoration: none;
       }
+    }
+  }
+  .online-bank-tablet {
+    display: none;
+  }
+
+  @include desktop {
+    min-width: 920px;
+  }
+
+  @include tablet {
+    min-width: 500px;
+    gap: 0;
+    flex-direction: column;
+
+    ul {
+      gap: 10px;
+    }
+    .logo {
+      font-size: 24px;
+    }
+    .button-primary {
+      padding: 10px;
+      font-size: 16px;
+    }
+    .header-brand {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+    .online-bank-tablet {
+      display: block;
+    }
+    .online-bank-desktop {
+      display: none;
     }
   }
 }

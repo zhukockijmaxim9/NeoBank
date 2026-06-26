@@ -1,3 +1,5 @@
+@use './../../styles/breakpoints.scss' as *;
+
 main {
   display: flex;
   flex-direction: column;
@@ -14,6 +16,9 @@ main {
 
     width: 100%;
     margin-top: 130px;
+
+    .hero-content {
+    }
 
     h1 {
       font-family: Ubuntu;
@@ -33,6 +38,36 @@ main {
         width: 250px;
         height: 150px;
         object-fit: cover;
+      }
+    }
+
+    @include desktop {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+      margin-top: 70px;
+
+      .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 800px;
+        text-align: center;
+      }
+    }
+    @include tablet {
+      .hero-content {
+        width: 500px;
+      }
+      .card-gallery {
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(2, 120px);
+        gap: 20px;
+
+        img {
+          width: 200px;
+          height: 120px;
+        }
       }
     }
   }
@@ -158,5 +193,10 @@ main {
         outline-color: #b2b2b2;
       }
     }
+  }
+
+  @include desktop {
+    width: 100%;
+    margin: 0 20px;
   }
 }

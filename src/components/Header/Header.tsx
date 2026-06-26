@@ -6,9 +6,14 @@ function Header() {
   return (
     <div className="header-wrapper">
       <header>
-        <Link className="logo" to="/">
-          NeoBank
-        </Link>
+        <div className="header-brand">
+          <Link className="logo" to="/">
+            NeoBank
+          </Link>
+          <Link className="button-primary online-bank-tablet" to="/online-bank">
+            Online Bank
+          </Link>
+        </div>
         <nav>
           <ul>
             <li>
@@ -33,7 +38,7 @@ function Header() {
             </li>
           </ul>
         </nav>
-        <Link className="button-primary" to="/online-bank">
+        <Link className="button-primary online-bank-desktop" to="/online-bank">
           Online Bank
         </Link>
       </header>
